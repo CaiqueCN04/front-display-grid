@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 20px;
+
+    grid-template-areas: 
+        "header header"/*os nome são iguais para pegar a linha inteira*/
+        "meio meio2"/*aqui vai ter duas imagens */
+        "meiob meiob"/*nomes sao iguais para pegar a linha inteira*/
+        "footer footer"
+    ;
+}
+
+.img-1{
+    grid-area: header;
+}
+
+.img-2{
+    grid-area: footer;
+}
+
+.img-3{
+    grid-area: meiob;
+}
+

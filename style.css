@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+body{
+    text-align: center;
+    
+}
+/*PARA USAR DISPLAY FLEX E DISPLAY GRID, APENAS COLOCAR GRID DENTRO DE UMA DIV FLEX*/
+.container-grid{
+    
+    /*tranformando em grid*/
+    /*declarar quantidade de colunas*/
+    /* grid-template-columns: 100px 100px; */
+    /* usando o repeat para fazer a mesma coisa que o de cima*/
+    /* grid-template-columns: repeat(3, 37%); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* bom para fazer o responsive!!!!!! */
+    /*colocando regra de tamanho max e min*/
+    /* tamanho min de 150 e tamanho max de 1 fração */
+    /* grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); */
+    /* usando o auto-fit */
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    /* pega a tela inteira!*/
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3px, 1fr);
+}
